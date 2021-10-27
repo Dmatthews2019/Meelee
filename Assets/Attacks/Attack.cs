@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Attack : MonoBehaviour
+public abstract class Attack : MonoBehaviour
 {
     public string attackName = "None";
     public int damage = 10;
@@ -15,8 +15,9 @@ public class Attack : MonoBehaviour
     public GameObject projectilePrefab;
     public int[] levelThresholds = { 0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190, 210, 231, 253, 276, 300, 325, 351, 378, 406, 435, 465, 496, 528, 561, 595, 630,666};
     public int cost = 10;
-    public virtual void Use() { }
     public Character character;
+
+    public virtual void Use() { }
 
     public void Update()
     {

@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cast : Attack
+public abstract class Cast : Attack
 {
-    public Cast() { 
     
-    }
 }
